@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int option;
+    cout<<"Enter the option: \n 1 for circle \n 2 for triangle \n 3 for rectangle \n Enter Here ="<<endl;
+    cin>>option;
+    switch (option) {
+        {
+            case 1:
+            float radius;
+            cout<<"Enter the radius: ";
+            cin>>radius;
+            float circleArea = 3.14* radius* radius;
+            cout<<"area of circle: "<<circleArea;
+            break;
+        }
+        case 2:
+        {
+        float base;
+        float height;
+        cout<<"Enter the base: ";
+        cin>>base;
+        cout<<"Enter the height: ";
+        cin>>height;
+        float triangleArea = base*height/2;
+        cout<<"Area of triangle: "<<triangleArea;
+        break;
+    }
+            case 3: {
+                float length;
+                float areaRectangle;
+                cout<<"Enter the length: ";
+                cin>>length;
+                areaRectangle = length*length;
+                cout<<"Area of rectangle: "<<areaRectangle;
+                break;
+            }
+    }
+    return 0;
+}
